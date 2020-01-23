@@ -1,0 +1,8 @@
+<RCC>
+    <qresource prefix="/ikony">
+        <file>ikony/file.png</file>
+        <file>ikony/pause.jfif</file>
+        <file>ikony/play.png</file>
+        <file>ikony/stop.png</file>
+    </qresource>
+</RCC>

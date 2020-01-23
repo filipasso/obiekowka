@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>320</width>
+    <height>313</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget"/>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>320</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuMenu">
+    <property name="title">
+     <string>Menu</string>
+    </property>
+    <addaction name="actionOtworz"/>
+   </widget>
+   <widget class="QMenu" name="menuVideo">
+    <property name="title">
+     <string>Video</string>
+    </property>
+    <addaction name="actiongraj"/>
+    <addaction name="actionpauza"/>
+    <addaction name="actionstop"/>
+   </widget>
+   <addaction name="menuMenu"/>
+   <addaction name="menuVideo"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <widget class="QToolBar" name="toolBar">
+   <property name="windowTitle">
+    <string>toolBar</string>
+   </property>
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+   <addaction name="actionOtworz"/>
+   <addaction name="separator"/>
+   <addaction name="actiongraj"/>
+   <addaction name="actionpauza"/>
+   <addaction name="actionstop"/>
+  </widget>
+  <widget class="QToolBar" name="toolBar_2">
+   <property name="windowTitle">
+    <string>toolBar_2</string>
+   </property>
+   <attribute name="toolBarArea">
+    <enum>BottomToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+  </widget>
+  <action name="actionOtworz">
+   <property name="icon">
+    <iconset resource="zasoby.qrc">
+     <normaloff>:/ikony/ikony/file.png</normaloff>:/ikony/ikony/file.png</iconset>
+   </property>
+   <property name="text">
+    <string>Otworz</string>
+   </property>
+   <property name="toolTip">
+    <string>Otworz folder</string>
+   </property>
+  </action>
+  <action name="actiongraj">
+   <property name="icon">
+    <iconset resource="zasoby.qrc">
+     <normaloff>:/ikony/ikony/play.png</normaloff>:/ikony/ikony/play.png</iconset>
+   </property>
+   <property name="text">
+    <string>graj</string>
+   </property>
+  </action>
+  <action name="actionpauza">
+   <property name="icon">
+    <iconset resource="zasoby.qrc">
+     <normaloff>:/ikony/ikony/pause.jfif</normaloff>:/ikony/ikony/pause.jfif</iconset>
+   </property>
+   <property name="text">
+    <string>pauza</string>
+   </property>
+  </action>
+  <action name="actionstop">
+   <property name="icon">
+    <iconset resource="zasoby.qrc">
+     <normaloff>:/ikony/ikony/stop.png</normaloff>:/ikony/ikony/stop.png</iconset>
+   </property>
+   <property name="text">
+    <string>stop</string>
+   </property>
+  </action>
+ </widget>
+ <resources>
+  <include location="zasoby.qrc"/>
+ </resources>
+ <connections/>
+</ui>
